@@ -35,3 +35,9 @@ echo -e "\n[+] Compiling the PageSpeed Dynamic Module"
 cd ~/nginx-$NGINX_VERSION
 ./configure --add-dynamic-module=../incubator-pagespeed-ngx-${NPS_VERSION}-stable --with-compat
 make modules && echo -e "\n[+] Done creating module"
+
+echo "[+] Copying nginx pagespeed module to the respective location"
+sudo cp objs/ngx_pagespeed.so /usr/lib/nginx/modules/ngx_pagespeed_${NPS_VERSION}.so
+echo "[+] Restarting nginx.."
+sudo systemctl restart nginx
+echo "[+] Done!!"
