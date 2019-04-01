@@ -3,7 +3,7 @@ Python helper script to build Google PageSpeed Module for Nginx web server.
 
 Requirement:
 ```
-$ sudo apt install python-apt
+$ sudo apt install python-apt python
 ```
 1. Clone this repository
 ```
