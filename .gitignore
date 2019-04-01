@@ -1,0 +1,8 @@
+# Packages #
+###################
+incubator-pagespeed-ngx-*
+nginx-*
+
+# Logs and databases #
+######################
+*.log
