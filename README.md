@@ -1,6 +1,12 @@
 # Nginx-pagespeed-module-script
-Helper script to build Google PageSpeed Module for Nginx web server.
+Python helper script to build Google PageSpeed Module for Nginx web server.
 
-## Note
-Experimental only!
-Tested on Ubuntu 16.04.
+1. Clone this repository
+```
+$ git clone git@github.com:IceM4nn/Nginx-pagespeed-module-script.git
+```
+2. Examine the script (change the location if needed on line 178)
+3. Run the script as root
+```
+$ sudo ./pagespeed-module.py
+```
